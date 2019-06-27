@@ -18,7 +18,7 @@ class App extends React.Component {
 
   onVideoSelect = (video) => {
     console.log('fromthe App!', video);
-  }
+  };
 
 
 
@@ -29,7 +29,7 @@ class App extends React.Component {
         onFormSubmit={this.onTermSubmit}
         />
         <VideoList
-        onVideoSelect={this.state.onVideoSelect}
+        onVideoSelect={this.onVideoSelect}
         videos={this.state.videos}
         />
       </div>
