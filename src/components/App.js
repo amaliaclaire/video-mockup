@@ -4,6 +4,7 @@ import youtube from '../apis/youtube';
 import VideoList from './VideoList';
 import VideoItem from './VideoItem';
 import VideoDetail from './VideoDetail'
+import Navbar from './Navbar'
 
 class App extends React.Component {
   state = {videos: [], selectedVideo: null}
@@ -33,6 +34,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="ui container">
+
+      <Navbar /> 
         <SearchBar
         onFormSubmit={this.onTermSubmit}
         />
