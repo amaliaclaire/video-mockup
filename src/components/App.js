@@ -6,6 +6,7 @@ import VideoList from './VideoList';
 import VideoItem from './VideoItem';
 import VideoDetail from './VideoDetail'
 import Navbar from './Navbar'
+import RecentVideos from './RecentVideos'
 
 class App extends React.Component {
   state = {videos: [], selectedVideo: null}
@@ -46,16 +47,16 @@ class App extends React.Component {
           <VideoDetail video={this.state.selectedVideo}/>
 
           </div>
-
           <div className="five wide column">
             <VideoList
             onVideoSelect={this.onVideoSelect}
             videos={this.state.videos}
             />
           </div>
-
           </div>
         </div>
+        <RecentVideos />
+
       </div>
     )
   }
