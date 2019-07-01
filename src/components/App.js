@@ -8,6 +8,7 @@ import VideoDetail from './VideoDetail'
 import Navbar from './Navbar'
 import RecentVideos from './RecentVideos'
 import AdvertisementMockUp from './AdvertisementMockUp'
+import PaginationExample from './PaginationExample'
 
 class App extends React.Component {
   state = {videos: [], selectedVideo: null}
@@ -57,7 +58,8 @@ class App extends React.Component {
           </div>
         </div>
         <RecentVideos />
-        <AdvertisementMockUp /> 
+        <AdvertisementMockUp />
+        <PaginationExample />
 
       </div>
     )
